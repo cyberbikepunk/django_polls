@@ -21,5 +21,5 @@ from polls.admin import admin_site
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^myadmin/', include(admin_site.urls)),
-    url(r'^polls/', include('polls.urls', namespace='polls')),
+    url(r'^polls/', include('polls.urls', namespace='polls', app_name='polls')),
 ]
